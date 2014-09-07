@@ -1,0 +1,1 @@
+&#169; <?php echo date('Y');?> Rude Agency

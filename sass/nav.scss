@@ -1,0 +1,21 @@
+#main-nav {
+	
+	position:fixed;
+	top:0;
+	width:100%;
+	background:#fff;
+	height:auto;
+	padding:10px 0;
+	z-index: 2;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	opacity: 0;
+
+	ul {
+		margin:0;
+	}
+	
+	ul li {
+		display:inline;
+	}
+	
+} //nav

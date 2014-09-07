@@ -1,0 +1,280 @@
+#header-img { 
+	width:100%;
+	background-position: center center;
+	background-size:cover;
+	position: fixed !important;
+}
+#header-push {
+	width:100%;
+	position: relative;
+	z-index: -1;
+}
+
+#logo1 {
+	background-image:url('../img/ele/logo1.png');
+	margin:-300px auto 0 auto;
+	z-index: 1;
+}
+#logo2 {
+	background-image:url('../img/ele/logo2.png');
+	z-index: -1;
+	opacity:.5;
+}
+#logo3 {
+	background-image:url('../img/ele/logo3.png');
+	margin:150px auto 0 auto;
+}
+.logo {
+	width:100%;
+	max-width:900px;
+	height:300px;
+	margin:150px auto 0 auto;
+	position: relative;
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+h1.landing {
+	text-align: center;
+	color:#bfbfbf;
+	font-weight: 300;
+	margin:0;
+	font-size:35px;
+	@include opacity(1);
+}
+
+.block {
+	position:relative;
+}
+
+// __________________________________ TRIGGERs
+
+.next-trigger {
+	width:100%;
+	text-align: center;
+	position: absolute;
+	bottom:10%;
+}
+.next-trigger a {
+	color:#d5d5d5;
+	font-size:18px;
+	font-weight: 100;
+}
+
+.next-trigger a:hover {
+	color:#fff;
+}
+
+.next-trigger .fa {font-size: 28px;}
+
+
+#next-to-contact.next-trigger a {
+	color:#787878;
+	font-weight: 300;
+}
+#next-to-contact.next-trigger a:hover {
+	color:#393939;
+}
+
+//_________________________________________________________________________ INDEX DESC
+
+
+#index-desc {
+	background:rgba(0,0,0,0.4);
+	padding:5% 0;
+	
+		.item {
+
+				.title {
+					float:left;
+				}
+				h2 {
+					font-weight: 200;
+					font-size: 63px;
+					color: #C7C7C7;
+					margin:10px 0 0 0;
+					text-transform: uppercase;
+					
+							span {
+								font-size: 60px;
+								color: #C7C7C7;
+								padding:0 0 0 10px;
+								text-transform: lowercase;
+								@include opacity(.4);
+								@include transition(opacity 0.2s ease-out);
+							}
+				}
+				p {
+					color: #e1e1e1;
+					font-size: 19px;
+					font-weight: 300;
+					padding: 19px 0 0 15px;
+					@include opacity(0);
+					@include transition(opacity 0.2s ease-out);
+				}
+				h3 {
+					font-weight: 100;
+					margin:70px 0 0 0;
+					color: gray;
+					font-size: 40px;
+				}
+				h4 {
+					font-size:25px;
+					color:#fff;
+					font-weight: 400;
+				}
+				.fa {
+					margin:0 25px;
+					@include opacity(.05);
+					@include transition(opacity 0.2s ease-out);
+				}
+		}
+		.item:hover p,
+		.item:hover h2 span {
+			@include opacity(.9);
+		}
+		.item:hover .fa {
+			@include opacity(.8);
+		}
+} //index-desc
+
+
+@media (max-width: 1200px) {
+	#index-desc {
+		.item h2 {
+			font-size: 50px;
+		}
+		.item h2 span {
+			font-size:47px;
+		}
+	} //
+} // 1200
+
+@media (max-width: 993px) {
+	#index-desc {
+		.item {
+			height:80px;
+		}
+		.item h2 {
+			font-size:40px;
+		}
+		.item h2 span {
+			font-size:37px;
+		}
+		.item p {
+			font-size: 15px;
+			font-weight: 300;
+			padding: 13px 0 0 8px;
+		}
+		.item h3 {
+			font-size:32px;
+		}
+	} //
+} // 993
+
+@media (max-width: 600px) {
+	#index-desc {
+		.item {
+			height:130px;
+			
+				.title {
+					width:100%;
+				}
+				h2 {
+					color: #efefef;
+					font-size:35px;
+				}
+				p {
+					font-size: 15px;
+					font-weight: 300;
+					padding: 13px 0 0 3px;
+					@include opacity(.7);
+				}
+		} // item
+	} // 
+} // 600
+
+
+
+//_________________________________________________________________________ INDEX GALLERY
+
+
+#index-gallery {
+		padding:5% 0;
+		background:#fff;
+
+	.container {
+		height:100%;
+	}
+	.item-container {
+		height:30%;
+		margin: 0 0 7% 0;
+	}
+	.item {
+		height:100%;
+		background-size:cover;
+		background-position: center center;
+		@include opacity(.8);
+		@include transition(opacity 0.2s ease-out);
+	}
+	.item-container:hover .item {
+		@include opacity(1);
+	}
+	p {
+		text-align: center;
+		margin:20px 0;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		font-size:13px;
+		color:#d6d6d6;
+		@include transition(color .3s ease-out);
+	}
+	.item-container:hover a p {
+		color:#707070;
+	}
+	
+} // #index-gallery 
+
+
+#hotspot-bg {background:url('../img/port/hotspot-bg.jpg');}
+#orni-bg		{background:url('../img/port/orni-bg.jpg');}
+#eigen-bg		{background:url('../img/port/eigen-bg.jpg');}
+#upcoming	{background:url('../img/port/upcoming-bg.jpg');}
+
+
+@media (max-width: 600px) {
+
+	#index-gallery {
+		
+		.item-container {
+			height:15%
+		}
+	}
+} // 600
+
+
+//_________________________________________________________________________ INDEX CONTACT
+
+
+#index-contact {
+		padding:5% 0;
+		background: #F8F8F8;
+		
+		.content {
+			margin:15% 0 0 0;
+			
+			p {
+				margin:0 0 10px 0;
+				font-size: 16px;
+				font-weight: 400;
+				text-align: center;
+			}
+			p.copyright {
+				margin:10% 0 0 0;
+				font-size:14px;
+				color:gray;
+				font-weight: 300;
+			}
+		}
+	
+} // #index-contact 

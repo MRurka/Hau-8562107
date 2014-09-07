@@ -1,0 +1,99 @@
+body{
+	display:none;
+}
+
+#jpreOverlay {
+	background-color: #fff;
+	padding:0 !important;
+	margin:0 !important;
+	top:0 !important;
+	position: absolute !important;
+}
+
+#jpreSlide{
+	margin:0 !important;
+	top:0 !important;
+	padding:0 !important;
+	position: absolute;
+	width:100%;
+	height:100%;
+}
+
+#jSplash {
+	margin:0 !important;
+	top:0 !important;
+	height:999px !important;
+	padding:0 !important;
+}
+
+// loader bar
+#jpreLoader{
+	width:100%;
+	height:2px;
+}
+#jpreBar {
+	
+	background-size:30px 30px;
+	-moz-background-size:30px 30px;
+	-webkit-background-size:30px 30px;
+	-o-background-size:30px 30px;
+	
+	background:#9a0f0f;
+		
+	animation: progress 2s linear infinite;
+	-moz-animation: progress 2s linear infinite;
+	-webkit-animation: progress 2s linear infinite;
+	-ms-animation: progress 2s linear infinite;
+	-o-animation: progress 2s linear infinite;	
+}
+#jprePercentage {
+	font-family: 'Source Sans Pro';
+	font-size:35px;
+	color: #848484;
+	text-align:center;
+	margin:20px 0 0 0;
+	font-weight: 100;
+	
+}
+
+
+@-webkit-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -60px -60px;
+  }
+}
+@-moz-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -60px -60px;
+  }
+}
+@-ms-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -60px -60px;
+  }
+}
+@-o-keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -60px -60px;
+  }
+}
+@keyframes progress {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -60px -60px;
+  }
+}
