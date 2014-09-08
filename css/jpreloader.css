@@ -1,185 +1,95 @@
-body{
-	display:none;
-}
+/* line 1, ../sass/jpreloader.scss */
+body {
+  display: none; }
+
+/* line 5, ../sass/jpreloader.scss */
 #jpreOverlay {
-	background-color: #000000;
-}
-#jpreSlide{
-	font-size:22px;
-	font-weight:bold;
-	color:#ccc;
-	text-align:center;
-	width:50%;
-	height:30%;
-}
-#jpreLoader{
-	width:300px;
-	height:25px;
-	box-shadow:0 0 7px 3px #fff;
-	-moz-box-shadow:0 0 7px 3px #fff;
-	-webkit-box-shadow:0 0 7px 3px #fff;
-	border-radius:25px;
-	-moz-border-radius:25px;
-	-webkit-border-radius:25px;
-}
+  background-color: #fff;
+  padding: 0 !important;
+  margin: 0 !important;
+  top: 0 !important;
+  position: absolute !important; }
+
+/* line 13, ../sass/jpreloader.scss */
+#jpreSlide {
+  margin: 0 !important;
+  top: 0 !important;
+  padding: 0 !important;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/* line 22, ../sass/jpreloader.scss */
+#jSplash {
+  margin: 0 !important;
+  top: 0 !important;
+  height: 999px !important;
+  padding: 0 !important; }
+
+/* line 30, ../sass/jpreloader.scss */
+#jpreLoader {
+  width: 100%;
+  height: 2px; }
+
+/* line 34, ../sass/jpreloader.scss */
 #jpreBar {
-	border-radius:25px;
-	-moz-border-radius:25px;
-	-webkit-border-radius:25px;
-	
-	background-size:30px 30px;
-	-moz-background-size:30px 30px;
-	-webkit-background-size:30px 30px;
-	-o-background-size:30px 30px;
-	
-	box-shadow:
-      0 5px 5px rgba(255,255,255,0.6) inset,
-      0 -5px 7px rgba(0, 0, 0, 0.4) inset;
-   -moz-box-shadow:
-      0 5px 5px rgba(255,255,255,0.6) inset,
-      0 -5px 7px rgba(0, 0, 0, 0.4) inset;
-   -webkit-box-shadow:
-      0 5px 5px rgba(255,255,255,0.6) inset,
-      0 -5px 7px rgba(0, 0, 0, 0.4) inset;
-   filter: progid:DXImageTransform.Microsoft.gradient(
-      startColorstr='#33ffffff',
-      endColorstr='#33000000',
-      GradientType=0 );
+  background-size: 30px 30px;
+  -moz-background-size: 30px 30px;
+  -webkit-background-size: 30px 30px;
+  -o-background-size: 30px 30px;
+  background: #9a0f0f;
+  animation: progress 2s linear infinite;
+  -moz-animation: progress 2s linear infinite;
+  -webkit-animation: progress 2s linear infinite;
+  -ms-animation: progress 2s linear infinite;
+  -o-animation: progress 2s linear infinite; }
 
-	background-color:#E07300;
-	background-image: -moz-linear-gradient(-45deg, 
-		rgba(255,255,255,0.15) 0%, 
-		rgba(255,255,255,0.15) 25%, 
-		rgba(255,255,255,0) 25%, 
-		rgba(255,255,255,0) 50%, 
-		rgba(255,255,255,0.15) 50%, 
-		rgba(255,255,255,0.15) 75%, 
-		rgba(255,255,255,0) 75%, 
-		rgba(255,255,255,0) 100%);
-	background-image: -webkit-gradient(linear, left top, right bottom, 
-		color-stop(0%,rgba(255,255,255,0.2)), 
-		color-stop(25%,rgba(255,255,255,0.2)), 
-		color-stop(25%,rgba(255,255,255,0)), 
-		color-stop(50%,rgba(255,255,255,0)), 
-		color-stop(50%,rgba(255,255,255,0.2)), 
-		color-stop(75%,rgba(255,255,255,0.2)),
-		color-stop(75%,rgba(255,255,255,0)),
-		color-stop(100%,rgba(255,255,255,0)));
-	background-image: -webkit-linear-gradient(-45deg, 
-		rgba(255,255,255,0.3) 0%,
-		rgba(255,255,255,0.3) 25%,
-		rgba(255,255,255,0) 25%,
-		rgba(255,255,255,0) 50%,
-		rgba(255,255,255,0.3) 50%,
-		rgba(255,255,255,0.3) 75%,
-		rgba(255,255,255,0) 75%,
-		rgba(255,255,255,0) 100%);
-	background-image: -o-linear-gradient(-45deg, 
-		rgba(255,255,255,0.15) 0%,
-		rgba(255,255,255,0.15) 25%,
-		rgba(255,255,255,0) 25%,
-		rgba(255,255,255,0) 50%,
-		rgba(255,255,255,0.15) 50%,
-		rgba(255,255,255,0.15) 75%,
-		rgba(255,255,255,0) 75%,
-		rgba(255,255,255,0) 100%);
-	background-image: -ms-linear-gradient(-45deg, 
-		rgba(255,255,255,0.15) 0%,
-		rgba(255,255,255,0.15) 25%,
-		rgba(255,255,255,0) 25%,
-		rgba(255,255,255,0) 50%,
-		rgba(255,255,255,0.15) 50%,
-		rgba(255,255,255,0.15) 75%,
-		rgba(255,255,255,0) 75%,
-		rgba(255,255,255,0) 100%);
-	background-image: linear-gradient(135deg, 
-		rgba(255,255,255,0.15) 0%,
-		rgba(255,255,255,0.15) 25%,
-		rgba(255,255,255,0) 25%,
-		rgba(255,255,255,0) 50%,
-		rgba(255,255,255,0.15) 50%,
-		rgba(255,255,255,0.15) 75%,
-		rgba(255,255,255,0) 75%,
-		rgba(255,255,255,0) 100%);
-		
-	animation: progress 2s linear infinite;
-	-moz-animation: progress 2s linear infinite;
-	-webkit-animation: progress 2s linear infinite;
-	-ms-animation: progress 2s linear infinite;
-	-o-animation: progress 2s linear infinite;	
-}
+/* line 49, ../sass/jpreloader.scss */
 #jprePercentage {
-	color:#ccc;
-	font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;
-	font-weight:bold;
-	text-align:center;
-	text-shadow:1px 1px 1px #333;
-	top:-100%;
-}
-
-#jpreButton{
-	padding:3px 10px;
-	cursor:pointer;
-	font-weight:bold;
-	line-height:1.5;
-	text-align:center;
-	width:100px;
-	margin:0 auto;
-	color:#fff;
-	text-shadow:-1px -1px 0 #01293F;
-	border:1px solid #2EACEA;
-	
-	border-radius:30px;
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	
-	background-color: #23a6ed;
-	background-image: -moz-linear-gradient(top, #23a6ed 0%, #1275aa 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#23a6ed), color-stop(100%,#1275aa));
-	background-image: -webkit-linear-gradient(top, #23a6ed 0%,#1275aa 100%);
-	background-image: -o-linear-gradient(top, #23a6ed 0%,#1275aa 100%);
-	background-image: -ms-linear-gradient(top, #23a6ed 0%,#1275aa 100%);
-	background-image: linear-gradient(to bottom, #23a6ed 0%,#1275aa 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23a6ed', endColorstr='#1275aa',GradientType=0 );
-}
+  font-family: 'Source Sans Pro';
+  font-size: 35px;
+  color: #848484;
+  text-align: center;
+  margin: 20px 0 0 0;
+  font-weight: 100; }
 
 @-webkit-keyframes progress {
+  /* line 61, ../sass/jpreloader.scss */
   from {
-    background-position: 0 0;
-  }
+    background-position: 0 0; }
+
+  /* line 64, ../sass/jpreloader.scss */
   to {
-    background-position: -60px -60px;
-  }
-}
+    background-position: -60px -60px; } }
 @-moz-keyframes progress {
+  /* line 69, ../sass/jpreloader.scss */
   from {
-    background-position: 0 0;
-  }
+    background-position: 0 0; }
+
+  /* line 72, ../sass/jpreloader.scss */
   to {
-    background-position: -60px -60px;
-  }
-}
+    background-position: -60px -60px; } }
 @-ms-keyframes progress {
+  /* line 77, ../sass/jpreloader.scss */
   from {
-    background-position: 0 0;
-  }
+    background-position: 0 0; }
+
+  /* line 80, ../sass/jpreloader.scss */
   to {
-    background-position: -60px -60px;
-  }
-}
+    background-position: -60px -60px; } }
 @-o-keyframes progress {
+  /* line 85, ../sass/jpreloader.scss */
   from {
-    background-position: 0 0;
-  }
+    background-position: 0 0; }
+
+  /* line 88, ../sass/jpreloader.scss */
   to {
-    background-position: -60px -60px;
-  }
-}
+    background-position: -60px -60px; } }
 @keyframes progress {
+  /* line 93, ../sass/jpreloader.scss */
   from {
-    background-position: 0 0;
-  }
+    background-position: 0 0; }
+
+  /* line 96, ../sass/jpreloader.scss */
   to {
-    background-position: -60px -60px;
-  }
-}
+    background-position: -60px -60px; } }

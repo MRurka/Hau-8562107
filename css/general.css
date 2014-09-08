@@ -1,0 +1,12 @@
+/* line 1, ../sass/general.scss */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; }
+
+/* line 6, ../sass/general.scss */
+a {
+  text-decoration: none !important; }
+
+/* line 10, ../sass/general.scss */
+.bgw {
+  background: #fff; }

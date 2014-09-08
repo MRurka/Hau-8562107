@@ -1,0 +1,17 @@
+/* line 1, ../sass/nav.scss */
+#main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  height: auto;
+  padding: 10px 0;
+  z-index: 2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0; }
+  /* line 13, ../sass/nav.scss */
+  #main-nav ul {
+    margin: 0; }
+  /* line 17, ../sass/nav.scss */
+  #main-nav ul li {
+    display: inline; }
