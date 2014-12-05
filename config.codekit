@@ -512,13 +512,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/port\/norm\/efs1.jpg": {
+	"\/img\/port\/norm\/EFS1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 3.10156e+06,
-		"inputAbbreviatedPath": "\/img\/port\/norm\/efs1.jpg",
-		"outputAbbreviatedPath": "\/img\/port\/norm\/efs1.jpg",
+		"inputAbbreviatedPath": "\/img\/port\/norm\/EFS1.jpg",
+		"outputAbbreviatedPath": "\/img\/port\/norm\/EFS1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/port\/norm\/ep14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 349123,
+		"inputAbbreviatedPath": "\/img\/port\/norm\/ep14.jpg",
+		"outputAbbreviatedPath": "\/img\/port\/norm\/ep14.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -853,13 +864,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/port\/norm\/nu-website.jpg": {
+	"\/img\/port\/norm\/Nu-Website.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 348603,
-		"inputAbbreviatedPath": "\/img\/port\/norm\/nu-website.jpg",
-		"outputAbbreviatedPath": "\/img\/port\/norm\/nu-website.jpg",
+		"inputAbbreviatedPath": "\/img\/port\/norm\/Nu-Website.jpg",
+		"outputAbbreviatedPath": "\/img\/port\/norm\/Nu-Website.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2019,18 +2030,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/LICENSE.md",
 		"outputAbbreviatedPath": "\/LICENSE.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/README.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/README.md",
-		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
